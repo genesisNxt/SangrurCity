@@ -1,0 +1,358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		442E29A324A6767C00DA61C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442E29A224A6767C00DA61C5 /* AppDelegate.swift */; };
+		442E29A524A6767C00DA61C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442E29A424A6767C00DA61C5 /* SceneDelegate.swift */; };
+		442E29A724A6767C00DA61C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442E29A624A6767C00DA61C5 /* ViewController.swift */; };
+		442E29AA24A6767C00DA61C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442E29A824A6767C00DA61C5 /* Main.storyboard */; };
+		442E29AD24A6767C00DA61C5 /* SangrurCity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 442E29AB24A6767C00DA61C5 /* SangrurCity.xcdatamodeld */; };
+		442E29AF24A6767F00DA61C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442E29AE24A6767F00DA61C5 /* Assets.xcassets */; };
+		442E29B224A6767F00DA61C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442E29B024A6767F00DA61C5 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		442E299F24A6767C00DA61C5 /* SangrurCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SangrurCity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		442E29A224A6767C00DA61C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		442E29A424A6767C00DA61C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		442E29A624A6767C00DA61C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		442E29A924A6767C00DA61C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		442E29AC24A6767C00DA61C5 /* SangrurCity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SangrurCity.xcdatamodel; sourceTree = "<group>"; };
+		442E29AE24A6767F00DA61C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		442E29B124A6767F00DA61C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		442E29B324A6767F00DA61C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		442E299C24A6767C00DA61C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		442E299624A6767C00DA61C5 = {
+			isa = PBXGroup;
+			children = (
+				442E29A124A6767C00DA61C5 /* SangrurCity */,
+				442E29A024A6767C00DA61C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		442E29A024A6767C00DA61C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				442E299F24A6767C00DA61C5 /* SangrurCity.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		442E29A124A6767C00DA61C5 /* SangrurCity */ = {
+			isa = PBXGroup;
+			children = (
+				442E29A224A6767C00DA61C5 /* AppDelegate.swift */,
+				442E29A424A6767C00DA61C5 /* SceneDelegate.swift */,
+				442E29A624A6767C00DA61C5 /* ViewController.swift */,
+				442E29A824A6767C00DA61C5 /* Main.storyboard */,
+				442E29AE24A6767F00DA61C5 /* Assets.xcassets */,
+				442E29B024A6767F00DA61C5 /* LaunchScreen.storyboard */,
+				442E29B324A6767F00DA61C5 /* Info.plist */,
+				442E29AB24A6767C00DA61C5 /* SangrurCity.xcdatamodeld */,
+			);
+			path = SangrurCity;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		442E299E24A6767C00DA61C5 /* SangrurCity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 442E29B624A6767F00DA61C5 /* Build configuration list for PBXNativeTarget "SangrurCity" */;
+			buildPhases = (
+				442E299B24A6767C00DA61C5 /* Sources */,
+				442E299C24A6767C00DA61C5 /* Frameworks */,
+				442E299D24A6767C00DA61C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SangrurCity;
+			productName = SangrurCity;
+			productReference = 442E299F24A6767C00DA61C5 /* SangrurCity.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		442E299724A6767C00DA61C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "PARMJIT SINGH KHATTRA";
+				TargetAttributes = {
+					442E299E24A6767C00DA61C5 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 442E299A24A6767C00DA61C5 /* Build configuration list for PBXProject "SangrurCity" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 442E299624A6767C00DA61C5;
+			productRefGroup = 442E29A024A6767C00DA61C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				442E299E24A6767C00DA61C5 /* SangrurCity */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		442E299D24A6767C00DA61C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				442E29B224A6767F00DA61C5 /* LaunchScreen.storyboard in Resources */,
+				442E29AF24A6767F00DA61C5 /* Assets.xcassets in Resources */,
+				442E29AA24A6767C00DA61C5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		442E299B24A6767C00DA61C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				442E29A724A6767C00DA61C5 /* ViewController.swift in Sources */,
+				442E29A324A6767C00DA61C5 /* AppDelegate.swift in Sources */,
+				442E29A524A6767C00DA61C5 /* SceneDelegate.swift in Sources */,
+				442E29AD24A6767C00DA61C5 /* SangrurCity.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		442E29A824A6767C00DA61C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				442E29A924A6767C00DA61C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		442E29B024A6767F00DA61C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				442E29B124A6767F00DA61C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		442E29B424A6767F00DA61C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		442E29B524A6767F00DA61C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		442E29B724A6767F00DA61C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SangrurCity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = genesis.SangrurCity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		442E29B824A6767F00DA61C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SangrurCity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = genesis.SangrurCity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		442E299A24A6767C00DA61C5 /* Build configuration list for PBXProject "SangrurCity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				442E29B424A6767F00DA61C5 /* Debug */,
+				442E29B524A6767F00DA61C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		442E29B624A6767F00DA61C5 /* Build configuration list for PBXNativeTarget "SangrurCity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				442E29B724A6767F00DA61C5 /* Debug */,
+				442E29B824A6767F00DA61C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		442E29AB24A6767C00DA61C5 /* SangrurCity.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				442E29AC24A6767C00DA61C5 /* SangrurCity.xcdatamodel */,
+			);
+			currentVersion = 442E29AC24A6767C00DA61C5 /* SangrurCity.xcdatamodel */;
+			path = SangrurCity.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 442E299724A6767C00DA61C5 /* Project object */;
+}
