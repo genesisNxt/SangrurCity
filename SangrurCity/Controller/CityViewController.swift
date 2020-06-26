@@ -48,14 +48,13 @@ class CityViewController: UIViewController {
     }
     
     // MARK:- loadCity Methods
-    func loadCity() {
-        let request: NSFetchRequest<City> = City.fetchRequest()
+    func loadCity(with request: NSFetchRequest<City> = City.fetchRequest()) {
         do {
             city = try context.fetch(request)
         } catch  {
             print("Error Loading\(error)")
         }
-        
+        tableView.reloadData()
     }
 }
 // MARK:- UITableView DataSource Methods
@@ -82,5 +81,23 @@ extension CityViewController: UITableViewDelegate{
 }
     
     // MARK:- Add SearchBar Delegate Methods
-
+extension CityViewController: UISearchBarDelegate{
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        let request: NSFetchRequest<City> = City.fetchRequest()
+        let predicate = NSPredicate(format: "cityName CONTAINS[cd] %@", searchBar.text!)
+        request.sortDescriptors = [NSSortDescriptor(key: "cityName", ascending: true)]
+        request.predicate = predicate
+        loadCity(with: request)
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text?.count == 0 {
+            loadCity()
+            DispatchQueue.main.async {
+                self.tableView.resignFirstResponder()
+            }
+        }
+    }
+}
+    
 ///
