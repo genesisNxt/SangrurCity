@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		442E29A324A6767C00DA61C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442E29A224A6767C00DA61C5 /* AppDelegate.swift */; };
 		442E29A524A6767C00DA61C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442E29A424A6767C00DA61C5 /* SceneDelegate.swift */; };
-		442E29A724A6767C00DA61C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442E29A624A6767C00DA61C5 /* ViewController.swift */; };
+		442E29A724A6767C00DA61C5 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442E29A624A6767C00DA61C5 /* CityViewController.swift */; };
 		442E29AA24A6767C00DA61C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442E29A824A6767C00DA61C5 /* Main.storyboard */; };
 		442E29AD24A6767C00DA61C5 /* SangrurCity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 442E29AB24A6767C00DA61C5 /* SangrurCity.xcdatamodeld */; };
 		442E29AF24A6767F00DA61C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442E29AE24A6767F00DA61C5 /* Assets.xcassets */; };
 		442E29B224A6767F00DA61C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442E29B024A6767F00DA61C5 /* LaunchScreen.storyboard */; };
+		442E29BA24A6769200DA61C5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442E29B924A6769200DA61C5 /* Constant.swift */; };
+		442E29C024A6795200DA61C5 /* VillageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442E29BF24A6795200DA61C5 /* VillageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		442E299F24A6767C00DA61C5 /* SangrurCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SangrurCity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		442E29A224A6767C00DA61C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		442E29A424A6767C00DA61C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		442E29A624A6767C00DA61C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		442E29A624A6767C00DA61C5 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		442E29A924A6767C00DA61C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		442E29AC24A6767C00DA61C5 /* SangrurCity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SangrurCity.xcdatamodel; sourceTree = "<group>"; };
 		442E29AE24A6767F00DA61C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		442E29B124A6767F00DA61C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		442E29B324A6767F00DA61C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		442E29B924A6769200DA61C5 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		442E29BF24A6795200DA61C5 /* VillageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +64,48 @@
 			children = (
 				442E29A224A6767C00DA61C5 /* AppDelegate.swift */,
 				442E29A424A6767C00DA61C5 /* SceneDelegate.swift */,
-				442E29A624A6767C00DA61C5 /* ViewController.swift */,
-				442E29A824A6767C00DA61C5 /* Main.storyboard */,
-				442E29AE24A6767F00DA61C5 /* Assets.xcassets */,
-				442E29B024A6767F00DA61C5 /* LaunchScreen.storyboard */,
+				442E29BB24A6774300DA61C5 /* Model */,
+				442E29BC24A6774F00DA61C5 /* View */,
+				442E29BD24A6775A00DA61C5 /* Controller */,
+				442E29BE24A677AE00DA61C5 /* Supporting Files */,
 				442E29B324A6767F00DA61C5 /* Info.plist */,
-				442E29AB24A6767C00DA61C5 /* SangrurCity.xcdatamodeld */,
 			);
 			path = SangrurCity;
+			sourceTree = "<group>";
+		};
+		442E29BB24A6774300DA61C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				442E29AB24A6767C00DA61C5 /* SangrurCity.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		442E29BC24A6774F00DA61C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				442E29A824A6767C00DA61C5 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		442E29BD24A6775A00DA61C5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				442E29A624A6767C00DA61C5 /* CityViewController.swift */,
+				442E29BF24A6795200DA61C5 /* VillageViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		442E29BE24A677AE00DA61C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				442E29AE24A6767F00DA61C5 /* Assets.xcassets */,
+				442E29B024A6767F00DA61C5 /* LaunchScreen.storyboard */,
+				442E29B924A6769200DA61C5 /* Constant.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				442E29A724A6767C00DA61C5 /* ViewController.swift in Sources */,
+				442E29A724A6767C00DA61C5 /* CityViewController.swift in Sources */,
 				442E29A324A6767C00DA61C5 /* AppDelegate.swift in Sources */,
+				442E29BA24A6769200DA61C5 /* Constant.swift in Sources */,
+				442E29C024A6795200DA61C5 /* VillageViewController.swift in Sources */,
 				442E29A524A6767C00DA61C5 /* SceneDelegate.swift in Sources */,
 				442E29AD24A6767C00DA61C5 /* SangrurCity.xcdatamodeld in Sources */,
 			);
