@@ -14,6 +14,13 @@ class VillageViewController: UIViewController {
     let constant = Constant()
     var village = [Village]()
     @IBOutlet weak var tableView: UITableView!
+    var selectedCity: City? {
+        didSet{
+            //loadVillage()
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadVillage()
@@ -48,7 +55,7 @@ class VillageViewController: UIViewController {
     }
     
         // MARK:- loadVillage Methods
-    func loadVillage(with request: NSFetchRequest<Village> = Village.fetchRequest()) {
+    func loadVillage(with request: NSFetchRequest<Village> = Village.fetchRequest(), predicate: NSPredicate? = nil) {
         do {
            village = try context.fetch(request)
         } catch  {

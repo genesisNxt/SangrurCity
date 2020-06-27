@@ -78,6 +78,15 @@ extension CityViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: constant.goToVillage, sender: self)
     }
+    
+    // MARK:- create prepare segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! VillageViewController
+        if let indexPath = tableView.indexPathForSelectedRow {
+            destinationVC.selectedCity = city[indexPath.row]
+            //print(destinationVC.selectedCity)
+        }
+    }
 }
     
     // MARK:- Add SearchBar Delegate Methods
