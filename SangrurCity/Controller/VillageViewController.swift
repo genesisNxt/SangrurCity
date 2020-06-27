@@ -48,13 +48,13 @@ class VillageViewController: UIViewController {
     }
     
         // MARK:- loadVillage Methods
-    func loadVillage() {
-        let request: NSFetchRequest<Village> = Village.fetchRequest()
+    func loadVillage(with request: NSFetchRequest<Village> = Village.fetchRequest()) {
         do {
            village = try context.fetch(request)
         } catch  {
             print("Error loading\(error)")
         }
+        tableView.reloadData()
     }
     
 }
@@ -83,3 +83,21 @@ extension VillageViewController: UITableViewDelegate {
 }
         
         // MARK:- Add SearchBar Delegate Methods
+extension VillageViewController: UISearchBarDelegate{
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text?.count == 0 {
+            loadVillage()
+            DispatchQueue.main.async {
+                self.tableView.resignFirstResponder()
+            }
+        }
+    }
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        let request: NSFetchRequest<Village> = Village.fetchRequest()
+        let predicate = NSPredicate(format: "villageName CONTAINS[cd] %@", searchBar.text!)
+        request.sortDescriptors = [NSSortDescriptor(key: "villageName", ascending: true)]
+        request.predicate = predicate
+        loadVillage(with: request)
+    }
+}
+
